@@ -1,0 +1,17 @@
+<MenuScreen>:
+	BoxLayout:
+		Button:
+			text: 'Go settings'
+			on_press:
+				root.manager.transition.direction='left'
+				root.manager.current='settings'
+		Button:
+			text: 'Quit'
+			
+<SettingScreen>:
+	Boxlayout:
+		Button:
+			text: 'My settings button'
+			on_press:
+				root.manager.transition.direction= 'right'
+				root.manager.current= 'menu'
